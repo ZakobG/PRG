@@ -8,11 +8,11 @@ public class AVG {
         double[] arr = new double[cisla];
         double total = 0;
 
-        for(int i=0; i<arr.length; i++){
-            System.out.println("Zadej čislo "+(i+1)+":");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Zadej čislo " + (i + 1) + ":");
             arr[i] = (int) scan.nextDouble();
         }
-        for(int i=0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             total = total + arr[i];
         }
         double average = total / arr.length;
