@@ -28,25 +28,24 @@ public class RPS {
                 case 2 -> System.out.println("On má papír!");
             }
 
-
             if (oMove == mMove) {
                 System.out.println("Dali jste remízu!");
             } else if (oMove == 0 && mMove == 1 || oMove == 1 && mMove == 2 || oMove == 2 && mMove == 0) {
                 System.out.println("Prohrál jsi!");
                 oScore++;
-                mScore--;
             } else if (oMove == 1 && mMove == 0 || oMove == 0 && mMove == 2 || oMove == 2 && mMove == 1) {
                 System.out.println("Vyhrál jsi!");
-                oScore--;
                 mScore++;
             }
 
             if (mScore == 3) {
                 System.out.println("Vyhrál jsi celý souboj v kámen nůžky papír!");
+                System.out.println("Souboj skončil : " + mScore + " " + oScore);
                 break;
             }
             if (oScore == 3) {
                 System.out.println("Prohrál jsi celý souboj v kámen nůžky papír!");
+                System.out.println("Souboj skončil : " + mScore + " " + oScore);
                 break;
             } else {
                 System.out.println("Skóre je : " + mScore + " " + oScore);
@@ -54,4 +53,3 @@ public class RPS {
         }
     }
 }
-
