@@ -1,3 +1,5 @@
+package Ukoly;
+
 import java.util.Scanner;
 
 public class AVG {
