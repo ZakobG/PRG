@@ -11,6 +11,7 @@ public class SButtons implements ActionListener {
     private JButton plus;
     private JButton minus;
     private JButton move;
+    private JButton images;
 
     int rx = 230;
     int ry = 10;
@@ -19,6 +20,7 @@ public class SButtons implements ActionListener {
     public JPanel getPanel() {
         JPanel panel = new JPanel();
 
+        // Buttons for addition and subtraction
         plus = new JButton("+1");
         plus.addActionListener(this);
         panel.add(plus);
@@ -27,6 +29,8 @@ public class SButtons implements ActionListener {
         panel.add(minus);
         label = new JLabel("" + i);
         panel.add(label);
+
+        // Button for random location
         move = new JButton("Click me");
         move.addActionListener(this);
         panel.add(move);
@@ -35,6 +39,7 @@ public class SButtons implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
+        // if for addition and subtraction
         if (e.getSource() == plus) {
             i++;
             label.setText("" + i);
@@ -44,10 +49,10 @@ public class SButtons implements ActionListener {
             label.setText("" + i);
         }
 
+        // if for random location
         int max = 700;
         int min = 1;
         int range = max - min + 1;
-
         ault = !ault;
         if (ault) {
             rx = 365;
