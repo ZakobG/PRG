@@ -1,9 +1,8 @@
-package Ukoly;
+package Ukoly.Buttons;
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.xml.stream.Location;
 
 public class SButtons implements ActionListener {
     private int i = 0;

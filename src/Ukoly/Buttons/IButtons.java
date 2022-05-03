@@ -1,4 +1,4 @@
-package Ukoly;
+package Ukoly.Buttons;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -38,10 +38,9 @@ public class IButtons implements ActionListener {
 
 
     public static void main(String[] args) {
-
         JFrame frame = new JFrame("Buttons");
         frame.setSize(700, 700);
-        frame.setDefaultCloseOperation(3);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         IButtons counter = new IButtons();
         JPanel counterPanel = counter.getPanel();
         Container content = frame.getContentPane();
